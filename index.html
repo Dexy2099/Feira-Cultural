@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feira Cultural</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="quiz-shell">
+    <header class="quiz-header">
+      <span class="quiz-tag">QUIZ</span>
+      <h1>Teste seus conhecimentos</h1>
+    </header>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <p class="progress-label" id="progressLabel">Pergunta 1 de 20</p>
+
+    <main class="card" id="quizCard">
+
+      <!-- Tela de pergunta -->
+      <section id="questionScreen">
+        <h2 class="question-text" id="questionText">Carregando pergunta...</h2>
+        <div class="options" id="optionsContainer"></div>
+        <button class="btn-primary" id="nextBtn" disabled>Próxima</button>
+      </section>
+
+      <!-- Tela final -->
+      <section id="resultScreen" class="hidden">
+        <h2 class="result-title">Quiz concluído!</h2>
+        <p class="result-score" id="resultScore">Você acertou 0 de 5</p>
+        <p class="result-message" id="resultMessage"></p>
+        <button class="btn-primary" id="restartBtn">Refazer quiz</button>
+      </section>
+
+    </main>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
